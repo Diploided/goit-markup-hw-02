@@ -190,6 +190,7 @@ body {
     color: var(--grey);
     background: var(--white1);
     border-radius: 4px;
+    cursor: pointer;
 }
 .main-link-blue {
     font-family: 'Roboto';
@@ -200,6 +201,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--white);
     border-radius: 4px;
+    cursor: pointer;
 }
 .main-link-blue {
     background: var(--additional-color);
@@ -211,7 +213,6 @@ body {
     background: var(--additional-color);
 }
 .bg-potrfolio {
-    background: var(--white);
     width: 370px;
     height: 404px;
     left: 215px;
