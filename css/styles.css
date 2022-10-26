@@ -71,7 +71,7 @@ img {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--additional-color);
 }
@@ -84,14 +84,14 @@ img {
 .header-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.15;
     letter-spacing: 0.02em;
     color: var(--grey);
 }
 .header-link-blue {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.15;
     letter-spacing: 0.02em;
     color: var(--additional-color);
 }
@@ -108,7 +108,7 @@ img {
 .header-mail, .header-tel {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.15;
     letter-spacing: 0.02em;
     color: var(--grey1);
     text-decoration: none;
@@ -154,7 +154,7 @@ img {
     max-width: 696px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
@@ -165,7 +165,7 @@ img {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -200,7 +200,7 @@ img {
 .feature {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.15;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--grey);
@@ -209,14 +209,14 @@ img {
 .description-feature {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.72;
     letter-spacing: 0.03em;
     color: var(--grey1);
 }
 .work {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--grey);
     text-align: center;
@@ -229,7 +229,7 @@ img {
 .teams {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--grey);
     text-align: center;
@@ -249,12 +249,11 @@ img {
     width: 270px;
     height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
 }
 .name {    
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--grey);
     text-align: center;
@@ -263,7 +262,7 @@ img {
 .position {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--grey1);
     text-align: center;
@@ -282,7 +281,7 @@ img {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--grey);
@@ -296,7 +295,7 @@ img {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--white);
@@ -328,14 +327,14 @@ img {
 .name-project {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--grey);
 }
 .project {
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--grey1);
     margin-top: 4px;
@@ -345,7 +344,6 @@ img {
     border-right: 1px solid var(--white2);
     border-bottom: 1px solid var(--white2);
     padding: 20px 24px 20px 24px;
-
 }
 .portfolio {
     display: flex;
@@ -364,7 +362,7 @@ img {
 .footer-map {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white);
     font-style: normal;
@@ -372,7 +370,7 @@ img {
 .footer-link {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey2);
     font-style: normal;
@@ -382,9 +380,11 @@ img {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--additional-color);
+    display: block;
+    margin-bottom: 20px;
 }
 .footer-logo-2 {  
     color: var(--white);
