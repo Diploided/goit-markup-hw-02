@@ -47,6 +47,8 @@ img {
     --bg-gray: #2F303A;
     --black: rgba(0, 0, 0, 0.15);
     --border: #ECECEC;
+    --border1: #AFB1B8;
+    --icon: #AFB1B8;
 }
 /*--------------------------Header-------------------------*/
 .header {
@@ -102,8 +104,18 @@ img {
     display: flex;
     justify-content: space-between;  
     align-items: center;
-    gap: 50px;
-    margin-left: 344px;
+    gap: 30px;
+    margin-left: 318px;
+}
+.header-icon {
+    fill: var(--grey1);
+}
+.header-icon:focus, .header-icon:hover {
+    fill: var(--additional-color);
+}
+.header-mail-list {
+    display: flex;
+    gap: 10px;
 }
 .header-mail, .header-tel {
     font-weight: 500;
@@ -128,7 +140,11 @@ img {
 .bg {
     background: var(--bg-gray);
     padding-top: 200px;
-    padding-bottom: 200px ;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .bg-main {
     background: var(--white);
@@ -197,6 +213,24 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.feature-icons-list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.feature-icons-item {
+    width: calc((100% - 90px)/4);
+    height: 120px;
+    background-color: var(--white1);
+    border-radius: 4px;
+}
+.feature-icons-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .feature {
     font-weight: 700;
     font-size: 14px;
@@ -247,10 +281,10 @@ img {
 .member {
     background: var(--white);
     width: 270px;
-    height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
-.name {    
+.name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -267,6 +301,73 @@ img {
     color: var(--grey1);
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 16px;
+}
+.soc-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.soc-item {
+    width: 44px;
+    height: 44px;
+}
+.soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.soc-icon {
+    fill: var(--icon);
+}
+.soc-link:hover, .soc-link:focus {
+    background-color: var(--additional-color);
+}
+.soc-icon:hover, .soc-icon:focus {
+   fill: var(--white); 
+}
+.customer {
+    background-color: var(--white);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.regular-customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.customer-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.customer-item {
+    width: calc((100% - 150px)/6);
+    height: 92px;
+}
+.customer-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--border1);
+}
+.customer-icon:hover, .customer-icon:focus {
+    fill: var(--additional-color);
+}
+.customer-link:hover, .customer-link:focus {
+    border: 1px solid var(--additional-color);
 }
 /*--------------------------Main-------------------------*/
 /*--------------------------Main(Portfolio)-------------------------*/
@@ -389,12 +490,49 @@ img {
 .footer-logo-2 {  
     color: var(--white);
 }
-.addres-footer { 
-    margin-top: 20px; 
-}
 .footer-list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 9px;
+}
+.join-in {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.footer-icons-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+.footer-icons-item {
+    width: 44px;
+    height: 44px;
+}
+.footer-icons-link {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-icon {
+    fill: var(--white);
+}
+.footer-section {
+    display: flex;
+    gap: 80px;
+}
+.footer-section2 {
+    padding-top: 12px;
+}
+.footer-icons-link:hover, .footer-icons-link:focus {
+   background-color: var(--additional-color); 
 }
