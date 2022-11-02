@@ -113,7 +113,7 @@ img {
 .header-icon:focus, .header-icon:hover {
     fill: var(--additional-color);
 }
-.header-mail-list {
+.header-icons-link {
     display: flex;
     gap: 10px;
 }
@@ -125,11 +125,12 @@ img {
     color: var(--grey1);
     text-decoration: none;
 }
-.header-mail:hover, .header-tel:hover, .header-mail:focus, .header-tel:focus{
-    color: var(--additional-color);
-}
 .border-bottom {
     border-bottom: 1px solid var(--border);
+}
+.header-icons-link:hover, .header-icons-link:focus {
+    fill: var(--additional-color);
+    color: var(--additional-color);
 }
 /*--------------------------Header-------------------------*/
 
@@ -144,11 +145,11 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
 }
 .bg-main {
     background: var(--white);
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 .bg-main-1 {
     background: var(--white1);   
@@ -162,9 +163,6 @@ img {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-}
-.feature-list {
-    width: 270px;
 }
 .main-text {
     max-width: 696px;
@@ -213,11 +211,6 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.feature-icons-list {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-}
 .feature-icons-item {
     width: calc((100% - 90px)/4);
     height: 120px;
@@ -230,6 +223,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .feature {
     font-weight: 700;
@@ -325,11 +319,9 @@ img {
 .soc-icon {
     fill: var(--icon);
 }
-.soc-link:hover, .soc-link:focus {
+.soc-link:hover, .soc-link:focus, .soc-icon:hover, .soc-icon:focus {
     background-color: var(--additional-color);
-}
-.soc-icon:hover, .soc-icon:focus {
-   fill: var(--white); 
+    fill: var(--white); 
 }
 .customer {
     background-color: var(--white);
@@ -371,6 +363,9 @@ img {
 }
 /*--------------------------Main-------------------------*/
 /*--------------------------Main(Portfolio)-------------------------*/
+.bg-potrfolio:hover, .bg-potrfolio:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .bg-main-portfolio {
     background: var(--white);
 }
@@ -528,10 +523,8 @@ img {
 }
 .footer-section {
     display: flex;
-    gap: 80px;
-}
-.footer-section2 {
-    padding-top: 12px;
+    gap: 70px;
+    align-items: baseline;
 }
 .footer-icons-link:hover, .footer-icons-link:focus {
    background-color: var(--additional-color); 
