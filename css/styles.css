@@ -107,30 +107,27 @@ img {
     gap: 30px;
     margin-left: 318px;
 }
-.header-icon {
-    fill: var(--grey1);
-}
-.header-icon:focus, .header-icon:hover {
-    fill: var(--additional-color);
-}
 .header-icons-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
+    color: var(--grey1);
+    fill: var(--grey1);
 }
 .header-mail, .header-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    color: var(--grey1);
     text-decoration: none;
+}
+.header-icons-link:focus, .header-icons-link:hover {
+    color: var(--additional-color);
+    fill: var(--additional-color);
 }
 .border-bottom {
     border-bottom: 1px solid var(--border);
-}
-.header-icons-link:hover, .header-icons-link:focus {
-    fill: var(--additional-color);
-    color: var(--additional-color);
 }
 /*--------------------------Header-------------------------*/
 
@@ -315,13 +312,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--grey1);
 }
 .soc-icon {
-    fill: var(--icon);
+    fill: currentColor;
 }
-.soc-link:hover, .soc-link:focus, .soc-icon:hover, .soc-icon:focus {
+.soc-link:hover, .soc-link:focus {
     background-color: var(--additional-color);
-    fill: var(--white); 
+    color: var(--white); 
 }
 .customer {
     background-color: var(--white);
@@ -353,13 +351,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--border1);
+    color: var(--border1);
 }
-.customer-icon:hover, .customer-icon:focus {
-    fill: var(--additional-color);
+.customer-icon {
+    fill: currentColor;
 }
 .customer-link:hover, .customer-link:focus {
     border: 1px solid var(--additional-color);
+    color: var(--additional-color);
 }
 /*--------------------------Main-------------------------*/
 /*--------------------------Main(Portfolio)-------------------------*/
