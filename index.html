@@ -46,7 +46,7 @@
         <section class="bg">
             <div class="container">
                 <h1 class="main-text">Ефективні рішення для вашого бізнесу</h1>
-                <button class="get-a-service" type="button">Замовити послугу</button>
+                <button class="get-a-service" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="bg-main">
@@ -96,9 +96,15 @@
             <div class="container">
                 <h2 class="work">Чим ми займаємося</h2>
                 <ul class="work-list list">
-                    <li class="work-link"><img src="./imges/dev1.jpg" width="370" height="294" alt="дев"></li>
-                    <li class="work-link"><img src="./imges/dev2.jpg" width="370" height="294" alt="дев"></li>
-                    <li class="work-link"><img src="./imges/dev3.jpg" width="370" height="294" alt="дев"></li>
+                    <li class="work-link"><img src="./imges/dev1.jpg" width="370" height="294" alt="дев">
+                        <p class="work-link-text">Десктопні додатки</p>
+                    </li>
+                    <li class="work-link"><img src="./imges/dev2.jpg" width="370" height="294" alt="дев">
+                        <p class="work-link-text">Мобільні додатки</p>
+                    </li>
+                    <li class="work-link"><img src="./imges/dev3.jpg" width="370" height="294" alt="дев">
+                        <p class="work-link-text">Дизайнерські рішення</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -348,5 +354,15 @@
             </div>  
         </section>
     </footer>
+    <div class="backdrop is-hidden"data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-icon" width="18" height="18">
+                    <use href="./imges/soc-icon.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
