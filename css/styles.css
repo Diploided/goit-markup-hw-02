@@ -98,17 +98,36 @@ img {
     line-height: 1.15;
     letter-spacing: 0.02em;
     color: var(--additional-color);
-    position: relative;
 }
-.header-list::after {
+.item {
+    position: relative;   
+}
+.header-link-blue::after {
     content: '';
     width: 48px;
     height: 4px;
+    top: 47px;
+    left: 0;
     background-color: var(--additional-color);
-    display: flex;
     border-radius: 2px;
     position: absolute;
-    top: 77px;
+} 
+.header-link-blue-2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--additional-color);
+}
+.header-link-blue-2::after {
+    content: '';
+    width: 78px;
+    height: 4px;
+    top: 47px;
+    left: 0;
+    background-color: var(--additional-color);
+    border-radius: 2px;
+    position: absolute;
 } 
 .header-link:hover, .header-link:focus{
     color: var(--additional-color);
