@@ -1,0 +1,25 @@
+address {
+    font-style: normal;
+}
+body {
+    font-family: Roboto, sans-serif;
+    color: #212121;
+}
+:root {
+    --main-color: #000000;
+    --additional-color: #2196F3;
+    --additional-color1: #188CE8;
+    --white: #FFFFFF;
+    --white1: #F5F4FA;
+    --white2: #EEEEEE;
+    --grey: #212121;
+    --grey1: #757575;
+    --grey2: rgba(255, 255, 255, 0.6);
+    --bg-white: #F5F5F5;
+    --bg-gray: #2F303A;
+    --black: rgba(0, 0, 0, 0.15);
+    --border: #ECECEC;
+    --border1: #AFB1B8;
+    --icon: #AFB1B8;
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

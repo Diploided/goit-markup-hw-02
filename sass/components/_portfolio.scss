@@ -1,0 +1,107 @@
+.bg-potrfolio {
+    transition: box-shadow var(--animation);
+    &:hover, &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 262px;
+    &:hover .portfolio-text {
+        transform: translateY(0);
+    }
+}
+.bg-main-portfolio {
+    background: var(--white);
+}
+.main-text-portfolio {
+    @extend %position
+}
+.main-link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+    background: var(--white1);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0px;
+    padding: 6px 22px 6px 22px;
+    transition: color var(--animation), background-color var(--animation);
+    &:hover, &:focus{
+        color: var(--white);
+        background-color: var(--additional-color);
+    }
+}
+.main-link-blue {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main-link-blue {
+    background: var(--additional-color);
+    border: 0px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    padding: 6px 25px 6px 25px;
+}
+.main-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.bg-potrfolio-text {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    top: 0;
+    padding: 63px 24px 0px 24px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform var(--animation);
+    overflow: auto;
+}
+.name-project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--grey);
+}
+.project {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--grey1);
+    margin-top: 4px;
+}
+.border-portfolio {
+    border-left: 1px solid var(--white2);
+    border-right: 1px solid var(--white2);
+    border-bottom: 1px solid var(--white2);
+    padding: 20px 24px 20px 24px;
+}
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}

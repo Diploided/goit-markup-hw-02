@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+ul, ol {
+    margin: 0px;
+    padding-left: 0px;
+}
+button {
+    cursor: pointer;
+}
+img {
+    display: block;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.list {
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}

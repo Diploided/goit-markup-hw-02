@@ -602,8 +602,13 @@ img {
 }
 .footer-section {
     display: flex;
-    gap: 70px;
     align-items: baseline;
+}
+.footer-upset-1 {
+    margin-right: 70px;
+}
+.footer-upset-2 {
+    margin-right: 93px;
 }
 .footer-icons-link:hover, .footer-icons-link:focus {
    background-color: var(--additional-color); 
@@ -676,7 +681,6 @@ img {
     top: 50%;
     left: 148px;
     transform: translateY(-50%);
-    margin-bottom: 50%;
   }
 /*--------------------------Backdrop--------------------------*/
 .backdrop {
