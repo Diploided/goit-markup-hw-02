@@ -2,7 +2,7 @@
     background-color: var(--white);
     @extend %position
 }
-.regular-customers {
+.customer__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -10,16 +10,16 @@
     letter-spacing: 0.03em;
     color: #212121;
 }
-.customer-list {
+.customer__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
 }
-.customer-item {
+.customer__item {
     width: calc((100% - 150px)/6);
     height: 92px;
 }
-.customer-link {
+.customer__icon {
     width: 100%;
     height: 100%;
     border: 1px solid var(--border1);
@@ -33,6 +33,6 @@
         color: var(--additional-color);
     }
 }
-.customer-icon {
+.customer__svg {
     fill: currentColor;
 }

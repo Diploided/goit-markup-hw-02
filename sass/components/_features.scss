@@ -1,26 +1,26 @@
-.bg-main {
+.feature {
     background: var(--white);
     @extend %position
 }
-.our-features {
+.feature__list {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-.feature-icons-item {
+.feature__item {
     width: calc((100% - 90px)/4);
     height: 120px;
     background-color: var(--white1);
     border-radius: 4px;
 }
-.feature-icons-link {
+.feature__icon {
     width: 100%;
     height: 100%;
     @extend %align-items;
     justify-content: center;
     margin-bottom: 30px;
 }
-.feature {
+.features__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.15;
@@ -29,7 +29,7 @@
     color: var(--grey);
     margin-bottom: 10px;
 }
-.description-feature {
+.feature__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.72;

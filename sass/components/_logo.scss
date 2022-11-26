@@ -1,4 +1,4 @@
-.header-logo-1{
+.header-logo__left{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -6,13 +6,13 @@
     letter-spacing: 0.03em;
     color: var(--additional-color);
 }
-.header-logo-2 {  
+.header-logo__rights {  
     color: var(--main-color);
 }
-.logo-1 {
+.header-logo {
     padding: 24px 0px 25px;
 }
-.footer-logo-1{
+.footer-logo__left {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -22,6 +22,6 @@
     display: block;
     margin-bottom: 20px;
 }
-.footer-logo-2 {  
+.footer-logo__right {  
     color: var(--white);
 }

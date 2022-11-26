@@ -22,7 +22,7 @@
         transform: translate(-50%, -50%) scaleY(0);
     }
 }
-.modal-close{
+.modal__button{
     widows: 30px;
     height: 30px;
     background-color: transparent;
@@ -39,7 +39,7 @@
         color: var(--additional-color);
     } 
 }
-.modal-icon {
+.modal__icon {
     fill: currentColor;
 }
 .is-hidden {
@@ -47,7 +47,7 @@
     visibility: hidden;
     pointer-events: none;
 }
-.modal-title {
+.modal__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -56,29 +56,27 @@
     color: var(--grey);
     margin-bottom: 12px;
 }
-.input-label{
+.form__label{
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: var(--grey1);
-}
-.input-label {
     display: block;
     margin-bottom: 4px;
 }
-.input-wrap {
+.form--wrap {
     position: relative;
     margin-bottom: 10px;
 }
-.modal-input-icon {
+.form__svg {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill var(--animation);
 }
-.modal-input {
+.form__input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -92,11 +90,11 @@
     &:focus {
         border: 1px solid var(--additional-color);
     }
-    &:focus + .modal-input-icon {
+    &:focus + .form__svg {
         fill: var(--additional-color);
     }
 }
-.form-textarea {
+.form__textarea {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -119,7 +117,17 @@
         color: rgba(117, 117, 117, 0.5);
     }
 }
-.check-text {
+.check__input {
+    &:checked + .check__label span {
+        background-color: var(--additional-color);
+        border-color: transparent;
+        fill: var(--white);
+    }
+    &:focus + .check__label span {
+        border-color: var(--additional-color);
+    }
+}
+.check__label {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
@@ -141,21 +149,11 @@
         fill: transparent;
     }
 }
-.input-check {
-    &:checked + .check-text span {
-        background-color: var(--additional-color);
-        border-color: transparent;
-        fill: var(--white);
-    }
-    &:focus + .check-text span {
-        border-color: var(--additional-color);
-    }
-}
-.contract {
+.check__contract {
     color: var(--additional-color);
     margin-left: 5px;
 }
-.form-button {
+.form__button {
     display: block;
     width: 200px;
     padding: 10px 52px;
