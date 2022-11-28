@@ -1,25 +1,32 @@
-address {
-    font-style: normal;
-}
-body {
-    font-family: Roboto, sans-serif;
-    color: #212121;
-}
-:root {
-    --main-color: #000000;
-    --additional-color: #2196F3;
-    --additional-color1: #188CE8;
-    --white: #FFFFFF;
-    --white1: #F5F4FA;
-    --white2: #EEEEEE;
-    --grey: #212121;
-    --grey1: #757575;
-    --grey2: rgba(255, 255, 255, 0.6);
-    --bg-white: #F5F5F5;
-    --bg-gray: #2F303A;
-    --black: rgba(0, 0, 0, 0.15);
-    --border: #ECECEC;
-    --border1: #AFB1B8;
-    --icon: #AFB1B8;
-    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  $main-color: #000000;
+  $black0-6: rgba(0, 0, 0, 0.06);
+  $black0: rgba(0, 0, 0, 0.08);
+  $black: rgba(0, 0, 0, 0.12);
+  $black1: rgba(0, 0, 0, 0.14);
+  $black1-2: rgba(0, 0, 0, 0.16);
+  $black2: rgba(0, 0, 0, 0.2);
+  $black3: rgba(33, 33, 33, 0.2);
+  $additional-color: #2196f3;
+  $additional-color1: #188ce8;
+  $additional-color2: rgba(33, 150, 243, 0.9);
+  $white: #FFFFFF;
+  $white1: #f5f4fa;
+  $bg-gray: #2f303a;
+  $grey: #212121;
+  $grey1: #757575;
+  $grey2: rgba(255, 255, 255, 0.6);
+  $grey3: rgba(117, 117, 117, 0.5);
+  $grey4: rgba(255, 255, 255, 0.1);
+  $grey5: rgba(47, 48, 58, 0.8);
+  $grey6: rgba(255, 255, 255, 0.3);
+  $black: rgba(0, 0, 0, 0.15);
+  $black2: rgba(0, 0, 0, 0.2);
+  $border: #ececec;
+  $border1: #afb1b8;
+  $gradient-color: rgba(47, 48, 58, 0.4);
+  $font-family: 'Roboto', sans-serif;
+  $font-family1: 'Raleway', sans-serif;
+  $transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  $transition-color1: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  $transition-border-color: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  $fill-color: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,0 +1,78 @@
+.soc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soc--card {
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding-bottom: 24px;
+}
+.soc__list {
+  @extend %--list;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.soc__item {
+  width: 44px;
+  height: 44px;
+  box-shadow: none;
+  border-radius: 50%;
+  text-align: center;
+}
+.soc__item:not(:last-child) {
+  margin-right: 10px;
+}
+.soc__link {
+  @extend %--link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $border1;
+  background-color: $white;
+  transition: $transition-color, $transition-color1;
+  &:hover, &:focus {
+    color: $white;
+    background-color: $additional-color;
+  }
+}
+.soc__icon {
+  fill: currentColor;
+}
+.soc__title {
+  @extend %--title;
+  color: $white;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.soc--end {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }  
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    margin: 0;
+  }
+    @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+.soc__link--color {
+  background-color: $grey4;
+  color: $white;
+}
