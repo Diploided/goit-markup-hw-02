@@ -21,15 +21,17 @@
   }
 }
 .footer__tablet {
+  margin-bottom: 60px; 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    gap: 165px;   
+    gap: 165px;  
   }
   @media screen and (min-width: 1200px) {
     gap: 70px;
     margin-right: 93px;
+    margin-bottom: 0px;
   }
 }
 .address {

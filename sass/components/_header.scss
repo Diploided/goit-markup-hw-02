@@ -6,8 +6,8 @@
   position: relative;
   border-bottom: 1px solid;
   border-color: $border;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   align-items: center;
   @media screen and (min-width: 768px) {
     padding-top: 0;
@@ -21,11 +21,11 @@
     justify-content: flex-start;
   }
 }
-.navigation__list {
+.nav__list {
   @extend %--list;
   gap: 50px;
 }
-.navigation, .navigation__list, .contact {
+.nav, .nav__list, .contact {
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 40px;
@@ -36,12 +36,12 @@
     line-height: 1.14;
   }
 }
-.navigation__item {
+.nav__item {
   @media screen and (min-width: 768px) {
     position: relative;
   }
 }
-.navigation__link {
+.nav__link {
   @extend %--link;
   display: inline-block;
   padding-top: 32px;
@@ -69,7 +69,7 @@
     }
   }
 }
-.navigation__link--focus {
+.nav__link--focus {
   color: $additional-color
 }
 .contact {
